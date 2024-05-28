@@ -1,0 +1,131 @@
+.box {
+    padding: 50px;
+    width: 200px;
+    margin: 20px 10px;
+    border-width: 50px;
+    border-style: solid;
+
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: emboss;
+
+
+}
+
+.pink {
+    border-image: linear-gradient(#94bbe9, #fc466b) 30;
+
+
+}
+
+.green {
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    visibility: hidden;
+
+}
+
+/* display:none- 아예 관련 아이템을 뺴버림 그 부분의 공간을 남겨두지 X
+
+visibility: hidden- 해당 부분만 보이지 않음 마치 스페이스만 해놓고
+다음 것이 보임.
+*/
+
+.blue {
+    border-image: linear-gradient(#090979, #00d4ff) 30;
+}
+
+body {
+
+
+    text-align: center;
+    display: flex;
+
+
+}
+
+.honk-style {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 17,
+        "SHLN" 50;
+    font-size: 80px
+}
+
+.button {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 5cm;
+    top: 5cm;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.button-30 {
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Verdana";
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
